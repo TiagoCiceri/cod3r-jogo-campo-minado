@@ -17,7 +17,7 @@ export default props => {
 
             <TouchableOpacity style={styles.button} 
                 onPress={props.onNewGame}>
-                <Text style={StyleSheet.buttonLabel}>Novo Jogo</Text>
+                <Text style={styles.buttonLabel}>Novo Jogo</Text>
             </TouchableOpacity>
         </View>
     )
@@ -49,6 +49,10 @@ const styles = StyleSheet.create ({
     button: {
         backgroundColor: '#999',
         padding: 5,
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 4,
+        elevation: 3,
     },
     buttonLabel: {
         fontSize: 20,
